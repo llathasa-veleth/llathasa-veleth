@@ -1,4 +1,4 @@
-```gas
+```as
         .global  _start
         .data
   text: .asciz   "Welcome\n"
