@@ -1,16 +1,15 @@
-### Hi there 👋
-
-<!--
-**llathasa-veleth/llathasa-veleth** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```gas
+        .global  _start
+        .data
+  text: .asciz   "Welcome\n"
+   len  =        .-text
+        .text
+_start: movq     $0x01, %rax
+        movq     $1,    %rdi
+        movq     $text, %rsi
+        movq     $len,  %rdx
+        syscall
+        movq     $0x3C, %rax
+        movq     $0,    %rdi
+        syscall
+```
