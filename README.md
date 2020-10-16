@@ -1,7 +1,7 @@
 ```asm
         [bits    64]
         section  .data
-  text: db       "hello, world!", 0hA
+  text: db       "welcome!", 0hA
    len: equ      $-text
         section  .text
         global   _start
