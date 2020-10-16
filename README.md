@@ -1,4 +1,4 @@
-```unix
+```gnu
         .global  _start
         .data
   text: .asciz   "Welcome\n"
