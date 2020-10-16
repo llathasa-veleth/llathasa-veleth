@@ -1,15 +1,16 @@
-```gnu
-        .global  _start
-        .data
-  text: .asciz   "Welcome\n"
-   len  =        .-text
-        .text
-_start: movq     $0x01, %rax
-        movq     $1,    %rdi
-        movq     $text, %rsi
-        movq     $len,  %rdx
+```asm
+        [bits    64]
+        section  .data
+  text: db       "hello, world!", 0hA
+   len: equ      $-text
+        section  .text
+        global   _start
+_start: mov      rax, 0h01
+        mov      rdi, 1
+        mov      rsi, text
+        mov      rdx, len
         syscall
-        movq     $0x3C, %rax
-        movq     $0,    %rdi
+        mov      rax, 0h3C
+        xor      rdi, rdi
         syscall
 ```
