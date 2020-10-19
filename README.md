@@ -1,3 +1,5 @@
+<img align="right" width="50%" alt="top langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=llathasa-veleth">
+
 ```asm
         [bits    64]
         section  .data
