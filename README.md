@@ -1,4 +1,4 @@
-<img align="right" width="32%" alt="top langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=llathasa-veleth">
+<img align="right" width="32%" alt="top langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=llathasa-veleth&langs_count=8">
 
 ```asm
         [bits    64]
